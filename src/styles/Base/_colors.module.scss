@@ -1,0 +1,251 @@
+// Colors
+$background-colour: #242424;
+$primary: #000;
+$primary-text-color: #686b70;
+$yellow-text-color: #f7ab0a;
+$secondary-text-color: #838383;
+$dark-blue: #1e3b5b;
+$dark-blue2: #284d5d;
+$dim-blue: #00b1af;
+$dull-blue: #284d5d;
+$bright-yellow: #ffcc00;
+$light-yellow: #fefbf2;
+$bright-blue: #257a9e;
+$black: #1d1e1e;
+$black2: #8d8d8d;
+$off-black: #717171;
+$light: #eef1f7;
+$light2: #e8eaea;
+$white: #fff;
+$off-white2: #f3f6f7;
+$light-white: #ffffff1a;
+$dark-white: #f7f6f3;
+$offset-white: #b4b4b4;
+$light-primary: #e6f2f4;
+$light-blue: #d0eaec;
+$cyan-gray: #eeeeee66;
+$light-gray: #d1d1d1;
+$lightest-grey: #f4f6f7;
+$charcoal: #222222;
+$charcoal-grey: #313640;
+$off-grey: #00000026;
+$gold: #e39d3d;
+$error: #fdeded;
+$light-error: #5f2120;
+$warning: #fff4e5;
+$light-warning: #663c00;
+$info: #e5f6fd;
+$light-info: #014361;
+$success: #edf7ed;
+$light-success: #1e4620;
+$light-off-grey: #dfdfdf;
+
+$charcoal-dark: #1e2021;
+$grey: #959fab;
+$light-grey: #e2e2e2;
+$warm-grey: #9b9b9b;
+$dim-gray: #0000001f;
+$dull-gray: #ced4da;
+$off-white: #eeeeee;
+$floral-white: #fff9f0;
+$nobel-gray: #a09f9f;
+$bg-light-warm: #f7f6f3;
+$bg-warm: #fcfcfc;
+$bg-dark-gray: #f9f9f9;
+$bg-charcoal: #2a2e31;
+$light-green: #418a41;
+$green: #149d4a;
+$light-black: #1a1919;
+$dim-green: #15a44d;
+$primary-color: #003466;
+$seaweed-blue: #037990;
+$light-cyan: #0ca39b;
+$navi-blue: #1f272e;
+$red: #ff0000;
+$dark-red: #d32f2f;
+$dim-red: #ee2c11;
+$white-fade: #ffffff4d;
+$nero: #1e1e1e;
+$dark-gray: #2222224a;
+$solid-black: #000000;
+$bg-off-white: #f5f5f5;
+$bg-light-blue: #cde7ea;
+$medium-gray: #5b5b5b;
+$metallic-seaweed: #037990;
+$cornflower-blue: #00a4c5;
+$alabaster: #f7f7f7;
+$bright-gray: #eaeaea;
+$bright-sun: #ffc845;
+$rich-black: #05060f;
+$jaffa: #e97d40;
+$medium-white-smoke: #f1f1f17a;
+$brown-gray: #28465d66;
+$font-18-gray: #5b5b5b;
+$font-18-white-smoke: #f1f1f17a;
+$cyan-green: #8deea2;
+$font-18-white-smoke: #f1f1f17a;
+$amour: #f05d4e;
+$dull-black: #66728ad9;
+$opaque-gray: #f9f9f9;
+$off-blue: #037990;
+
+$facebook: #3b5998;
+$twitter: #00acee;
+$instagram: url(#rg);
+$youtube: #c4302b;
+$linkedin: #0072b1;
+$dark-gray-2: #b9b9b9;
+$premium-black: #16262e;
+$pale-yellow: #ddbd2a;
+$brass-yellow: #e2a13b;
+$gold-yellow: #e39d3d;
+$gold-orange: #f99e21;
+$yellow: #ffc845;
+$bluish: #00b1af;
+$bg-bluish-black: #14262e;
+$bg-gray: #f5f5f7;
+$font-primary: #037990;
+$border-grey: #c5c5c552;
+$dark-bluish: rgba(0, 177, 175, 0.2);
+$bg-faded-blue: #eff7fb;
+$bg-light-white: #fbfbfb;
+$dark-green: #017c3c;
+
+// UA colors
+$ua-primary: #f05d4e;
+$ua-secondary: #111a41;
+$ua-button-gradient: linear-gradient(270.01deg, #f05d4e 0%, #e97d40 100.03%);
+$cyan-green: #8deea2;
+$amour: #f05d4e;
+$dull-black: #66728ad9;
+$dim-black: #6c6c6c;
+
+// Presets
+$disabled: #cccccc;
+
+// Opacity
+$bg-warm-99: #fcfcfc99;
+$dark-gray-80: #c6c6c680;
+$solid-black-0d: #0000000d;
+$solid-black-40: #00000040;
+$solid-black-80: #00000080;
+$solid-black-2b: #0000002b;
+$bg-gray-light-60: #eeeeee99;
+$deep-teal-80: #00303980;
+$white-aa: #ffffffaa;
+$ebony-c2: #05060fc2;
+
+@mixin primaryGradient {
+  background-color: #f7ab0a;
+  background-image: linear-gradient(
+    225deg,
+    #f7ab0a 0%,
+    #af5353 50%,
+    #242424 100%
+  );
+}
+
+@mixin secondaryGradient {
+  background: #304352; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #979796,
+    #242424
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #616161,
+    #242424
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+:export {
+  primary: $primary;
+  dark-blue: $dark-blue;
+  dark-blue2: $dark-blue2;
+  bright-yellow: $bright-yellow;
+  light-yellow: $light-yellow;
+  bright-blue: $bright-blue;
+  black: $black;
+  black2: $black2;
+  off-black: $off-black;
+  light: $light;
+  light2: $light2;
+  white: $white;
+  light-white: $light-white;
+  dark-white: $dark-white;
+  offset-white: $offset-white;
+  light-primary: $light-primary;
+  light-blue: $light-blue;
+  light-gray: $light-gray;
+  lightest-grey: $lightest-grey;
+  charcoal: $charcoal;
+  charcoal-grey: $charcoal-grey;
+  off-grey: $off-grey;
+  light-off-grey: $light-off-grey;
+  charcoal-dark: $charcoal-dark;
+  grey: $grey;
+  light-grey: $light-grey;
+  warm-grey: $warm-grey;
+  dim-gray: $dim-gray;
+  dull-gray: $dull-gray;
+  off-white: $off-white;
+  nobel-gray: $nobel-gray;
+  bg-light-warm: $bg-light-warm;
+  bg-warm: $bg-warm;
+  bg-dark-gray: $bg-dark-gray;
+  bg-charcoal: $bg-charcoal;
+  light-green: $light-green;
+  green: $green;
+  light-black: $light-black;
+  primary-color: $primary-color;
+  light-cyan: $light-cyan;
+  navi-blue: $navi-blue;
+  red: $red;
+  white-fade: $white-fade;
+  nero: $nero;
+  dark-gray: $dark-gray;
+  solid-black: $solid-black;
+  bg-off-white: $bg-off-white;
+  bg-light-blue: $bg-light-blue;
+  medium-gray: $medium-gray;
+  medium-white-smoke: $medium-white-smoke;
+  brown-gray: $brown-gray;
+  font-18-gray: $font-18-gray;
+  font-18-white-smoke: $font-18-white-smoke;
+  amour: $amour;
+  opaque-gray: $opaque-gray;
+  off-blue: $off-blue;
+  facebook: $facebook;
+  twitter: $twitter;
+  instagram: $instagram;
+  youtube: $youtube;
+  linkedin: $linkedin;
+  dark-gray-2: $dark-gray-2;
+  premium-black: $premium-black;
+  pale-yellow: $pale-yellow;
+  brass-yellow: $brass-yellow;
+  gold-yellow: $gold-yellow;
+  yellow: $yellow;
+  bluish: $bluish;
+  bgBluishBlack: $bg-bluish-black;
+  bg-gray: $bg-gray;
+  font-primary: $font-primary;
+  disabled: $disabled;
+  bg-warm-99: $bg-warm-99;
+  dark-gray-80: $dark-gray-80;
+  solid-black-0d: $solid-black-0d;
+  solid-black-80: $solid-black-80;
+  solid-black-2b: $solid-black-2b;
+  gold: $gold;
+  cynaGreen: $cyan-green;
+  darkRed: $dark-red;
+  error: $error;
+  warning: $warning;
+  info: $info;
+  success: $success;
+  cyan-gray: $cyan-gray;
+  dullBlack: $dull-black;
+  gold-orange: $gold-orange;
+  bg-faded-blue: $bg-faded-blue;
+  dimBlue: $dim-blue;
+}
