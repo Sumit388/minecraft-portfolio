@@ -1,6 +1,8 @@
 import Styles from "../styles/About/About.module.scss";
 import pixar from "../images/pixarBabyMe.jpg";
-import { Linkedin, GitHub, Twitter, Mail } from "react-feather";
+
+import { SOCIAL_LINKS } from "../data/About/aboutData";
+import DataGrid from "../components/About/DataGrid";
 
 const About = () => {
   return (
@@ -12,31 +14,23 @@ const About = () => {
       <div className={Styles.subHeadingContainer}>
         <h2>Frontend Engineer | Software Developer</h2>
       </div>
-      <p>
-        I specialize in crafting intuitive web applications that prioritize user
-        experience, drawing on my proficiency in Full-Stack Development. Eager
-        to apply Front-end Development principles alongside seamless RESTful API
-        integration, I aim to deliver cutting-edge and user-centric interfaces.
+      <p className={Styles.mainDescriptionPara}>
+        I am highly motivated React Developer, proficient in building responsive
+        and user-friendly web applications using React.js and modern web
+        technologies.I have strong understanding of front-end development
+        principles and best practices, with a keen eye for detail and a passion
+        for creating seamless user experiences.
       </p>
       <div className={Styles.contactDetailsConatiner}>
-        <button>
-          <Linkedin /> LinkedIn
-        </button>
-        |{" "}
-        <button>
-          <GitHub />
-          Github{" "}
-        </button>
-        |
-        <button>
-          {" "}
-          <Twitter />
-          Twitter{" "}
-        </button>
-        |{" "}
-        <button>
-          <Mail /> Email
-        </button>
+        {SOCIAL_LINKS.map((social) => (
+          <a href={social.link} alt={social.name} key={social.id}>
+            <span>{social.icon} </span>
+            <span>{social.name}</span>
+          </a>
+        ))}
+      </div>
+      <div className={Styles.infoSection}>
+        <DataGrid />
       </div>
       <div className={Styles.imageConatiner}>
         <img src={pixar} alt="my pxar version" />

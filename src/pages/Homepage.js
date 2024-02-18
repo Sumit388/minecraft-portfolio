@@ -14,7 +14,7 @@ import { Menu } from "../components/Menu";
 import { Banner } from "../components/Banner";
 
 //* Data Imports */
-import { BANNER_DATA } from "../data/bannerData";
+import { BANNER_DATA } from "../data/Homepage/bannerData";
 
 function Homepage() {
   const [sunPosition, setSunPosition] = useState(0);

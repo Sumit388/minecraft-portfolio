@@ -1,45 +1,49 @@
-import { bannerTexture, projectBannerTexture, contactBannerTexture, blankTexture } from "../images/textures"
-
+import {
+  bannerTexture,
+  projectBannerTexture,
+  contactBannerTexture,
+  blankTexture,
+} from "../../images/textures";
 
 export const BANNER_DATA = [
-   {
+  {
     id: 1,
-    name:"aboutBanner",
+    name: "aboutBanner",
     position: [-0.375, 5, -10],
     size: [8.5, 4, 2],
     rotation: [0, 0, 0],
-    texture: bannerTexture
+    texture: bannerTexture,
   },
-   {
+  {
     id: 2,
-    name:"contactBanner",
+    name: "contactBanner",
     position: [9, 3, -13],
     size: [3.5, 5.5, 2],
     rotation: [0, 0, 0],
-    texture: contactBannerTexture
+    texture: contactBannerTexture,
   },
   {
     id: 3,
-    name:"projectsBanner",
+    name: "projectsBanner",
     position: [-10, 3, -13],
     size: [3.5, 5.5, 2],
     rotation: [0, 0, 0],
-    texture: projectBannerTexture
+    texture: projectBannerTexture,
   },
   {
     id: 4,
-    name:"skillsBanner",
+    name: "skillsBanner",
     position: [-15.5, 1.5, -10],
     size: [3, 3, 2],
     rotation: [0, 0, 0],
-    texture: blankTexture
+    texture: blankTexture,
   },
   {
     id: 5,
-    name:"resumeBanner",
+    name: "resumeBanner",
     position: [14.5, 1.5, -10],
     size: [3, 3, 2],
     rotation: [0, 0, 0],
-    texture: blankTexture
+    texture: blankTexture,
   },
 ];

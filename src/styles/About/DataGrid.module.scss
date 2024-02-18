@@ -1,0 +1,134 @@
+@use "../Base/" as *;
+
+.dataGrid {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include responsive($screen-991) {
+    width: 74%;
+    display: grid;
+    grid-row: 6;
+    grid-column: 6;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .dataListItem {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 6px;
+    order: 3;
+
+    h3 {
+      margin: 0;
+      margin-bottom: 6px;
+      color: $off-white;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: $font-16;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(1) {
+      order: 1;
+      background: $rich-black;
+
+      h3 {
+        letter-spacing: 0.8rem;
+        color: $primary-text-color;
+      }
+
+      @include responsive($screen-991) {
+        order: 3;
+        background: transparent;
+      }
+    }
+
+    &:nth-child(2) {
+      @include secondaryGradient();
+
+      @include responsive($screen-991) {
+        background: transparent;
+      }
+      h3 {
+        color: $yellow-text-color;
+      }
+
+      p {
+        color: $off-white;
+
+        @include responsive($screen-991) {
+          color: $primary-text-color;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      justify-content: center;
+      background: $rich-black;
+
+      @include responsive($screen-991) {
+        background: transparent;
+      }
+
+      p {
+        letter-spacing: 0.1rem;
+      }
+    }
+
+    &:nth-child(4) {
+      @include primaryGradient();
+
+      h3 {
+        color: $yellow-text-color;
+      }
+    }
+
+    &:nth-child(5) {
+      border: 1px solid rgba($yellow-text-color, 0.4);
+      order: 1;
+      background: $rich-black;
+
+      h3 {
+        letter-spacing: 0.8rem;
+        color: $primary-text-color;
+      }
+
+      @include responsive($screen-991) {
+        order: 3;
+        background: transparent;
+      }
+    }
+
+    &:nth-child(6) {
+      @include secondaryGradient();
+      justify-content: center;
+
+      h3 {
+        color: $yellow-text-color;
+      }
+    }
+
+    &:nth-child(7) {
+      justify-content: center;
+      @include primaryGradient();
+
+      @include responsive($screen-991) {
+        background: transparent;
+      }
+
+      p {
+        color: $off-white;
+        @include responsive($screen-991) {
+          color: rgba($yellow-text-color, 0.6);
+        }
+      }
+    }
+  }
+}
