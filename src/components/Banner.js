@@ -14,7 +14,7 @@ export const Banner = ({ data }) => {
     <mesh
       onClick={(e) => {
         e.stopPropagation();
-        window.open("/");
+        window.open(data.url);
       }}
       ref={ref}
       style={{ cursor: "pointer" }}

@@ -16,6 +16,9 @@ import { Banner } from "../components/Banner";
 //* Data Imports */
 import { BANNER_DATA } from "../data/Homepage/bannerData";
 
+//* Styles Imports */
+import Styles from "../styles/Home/Homepage.module.scss";
+
 function Homepage() {
   const [sunPosition, setSunPosition] = useState(0);
   const [direction, setDirection] = useState(1);
@@ -39,8 +42,8 @@ function Homepage() {
   }, [direction]);
 
   return (
-    <>
-      <Canvas>
+    <div className={Styles.homepageContainer}>
+      <Canvas >
         <Sky sunPosition={[200, sunPosition, 20]} distance={500} />
         <ambientLight intensity={0.5} />
         <FPV />
@@ -58,7 +61,7 @@ function Homepage() {
       <div className="absolute centered cursor">+</div>
       <TextureSelector />
       <Menu />
-    </>
+    </div>
   );
 }
 

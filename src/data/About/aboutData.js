@@ -1,5 +1,11 @@
 import { Linkedin, GitHub, Twitter, Mail } from "react-feather";
 
+export const PAGE_DESCRIPTION = `I am highly motivated React Developer, proficient in building responsive
+and user-friendly web applications using React.js and modern web
+technologies.I have strong understanding of front-end development
+principles and best practices, with a keen eye for detail and a passion
+for creating seamless user experiences.`;
+
 export const SOCIAL_LINKS = [
   {
     id: 1,
