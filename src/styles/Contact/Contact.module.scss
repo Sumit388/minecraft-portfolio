@@ -1,0 +1,46 @@
+@use "../Base/" as *;
+
+.contactContainer {
+  @include container();
+
+  .submitNotification {
+    margin-top: 30px;
+    letter-spacing: 0.1rem;
+    color: $off-white;
+    font-size: $font-14;
+    width: 100%;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 441px;
+    padding-top: 20px;
+    letter-spacing: 0.1rem;
+    color: $off-white;
+    font-size: $font-14;
+
+    label {
+      padding-top: 10px;
+    }
+
+    input,
+    textarea {
+      padding: 10px 20px;
+      background: $background-colour;
+      border: none;
+      @include elevate();
+      letter-spacing: 0.1rem;
+      color: $off-white;
+      font-size: $font-14;
+      border-radius: 50px;
+    }
+
+    button {
+      @include buttonStyles();
+      margin-top: 20px;
+    }
+  }
+}

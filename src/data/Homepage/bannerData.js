@@ -13,7 +13,7 @@ export const BANNER_DATA = [
     size: [8.5, 4, 2],
     rotation: [0, 0, 0],
     texture: bannerTexture,
-    url:"/about"
+    url: "/about",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const BANNER_DATA = [
     size: [3.5, 5.5, 2],
     rotation: [0, 0, 0],
     texture: contactBannerTexture,
-    url:"/about"
+    url: "/contact",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const BANNER_DATA = [
     size: [3.5, 5.5, 2],
     rotation: [0, 0, 0],
     texture: projectBannerTexture,
-    url:"/projects"
+    url: "/projects",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ export const BANNER_DATA = [
     size: [3, 3, 2],
     rotation: [0, 0, 0],
     texture: blankTexture,
-    url:"/about"
+    url: "/about",
   },
   {
     id: 5,
@@ -49,6 +49,6 @@ export const BANNER_DATA = [
     size: [3, 3, 2],
     rotation: [0, 0, 0],
     texture: blankTexture,
-    url:"/about"
+    url: "/about",
   },
 ];
