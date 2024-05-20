@@ -40,7 +40,10 @@ const Contact = () => {
 
   return (
     <div className={Styles.contactContainer}>
-      <CommonHeading description={CONTACT_PAGE_DESCRIPTION} />
+      <CommonHeading
+        description={CONTACT_PAGE_DESCRIPTION}
+        activeTab="Contact"
+      />
       <form onSubmit={onSubmit}>
         <label htmlFor="name">Name:</label>
         <input type="text" name="name" id="name" required />

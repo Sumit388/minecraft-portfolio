@@ -33,6 +33,29 @@ export const SOCIAL_LINKS = [
   },
 ];
 
+export const QUICK_LINKS = [
+  {
+    id: 1,
+    name: "About",
+    link: "/about",
+  },
+  {
+    id: 2,
+    name: "Projects",
+    link: "/projects",
+  },
+  {
+    id: 3,
+    name: "Skills",
+    link: "/skills",
+  },
+  {
+    id: 4,
+    name: "Contact",
+    link: "/contact",
+  },
+];
+
 export const INFO_LIST = [
   {
     id: 1,

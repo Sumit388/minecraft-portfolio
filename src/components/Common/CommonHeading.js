@@ -1,15 +1,32 @@
 //* Data Imports */
-import { SOCIAL_LINKS } from "../../data/About/aboutData";
+import { SOCIAL_LINKS, QUICK_LINKS } from "../../data/About/aboutData";
 
 //* Styles Imports */
 import Styles from "../../styles/Common/CommonHeading.module.scss";
 
-const CommonHeading = ({ description }) => (
+const CommonHeading = ({ description, activeTab }) => (
   <div className={Styles.commonHeadingContainer}>
     {" "}
     <div className={Styles.headingContainer}>
-      <h1>Sumit Mishra</h1>
-      <button>Download C.V.</button>
+      <div className={Styles.heading}>
+        <a href="/">
+          <h1>Sumit Mishra</h1>
+        </a>
+        <button>Download C.V.</button>
+      </div>
+      <div className={Styles.quickLinks}>
+        {QUICK_LINKS.map((entry) => (
+          <a
+            key={entry?.id}
+            href={entry.link}
+            target="_blank"
+            rel="noreferrer"
+            className={entry.name === activeTab ? Styles.disabled : ""}
+          >
+            {entry.name}
+          </a>
+        ))}
+      </div>
     </div>
     <div className={Styles.subHeadingContainer}>
       <h2>Frontend Engineer | Software Developer</h2>

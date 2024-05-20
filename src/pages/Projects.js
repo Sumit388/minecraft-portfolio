@@ -14,7 +14,10 @@ import Styles from "../styles/Projects/ProjectPage.module.scss";
 
 const Projects = () => (
   <div className={Styles.projectsContainer}>
-    <CommonHeading description={PROJECTS_PAGE_DESCRIPTION} />
+    <CommonHeading
+      description={PROJECTS_PAGE_DESCRIPTION}
+      activeTab="Projects"
+    />
     {PROJECT_DETAILS.map((project) => (
       <Fragment key={project?.id}>
         <ProjectsCards details={project} />

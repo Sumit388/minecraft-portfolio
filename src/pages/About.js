@@ -14,7 +14,7 @@ import Styles from "../styles/About/About.module.scss";
 const About = () => {
   return (
     <div className={Styles.about}>
-      <CommonHeading description={PAGE_DESCRIPTION} />
+      <CommonHeading description={PAGE_DESCRIPTION} activeTab="About" />
       <div className={Styles.infoSection}>
         <DataGrid />
       </div>
