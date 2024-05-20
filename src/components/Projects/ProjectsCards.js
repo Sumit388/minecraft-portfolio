@@ -7,7 +7,7 @@ import Styles from "../../styles/Projects/ProjectsCard.module.scss";
 const ProjectsCards = ({ details }) => (
   <div className={Styles.cardContainer}>
     <div className={Styles.imageContainer}>
-      <img src={details?.imageUrl} />
+      <img src={details?.imageUrl} alt="project-banner" />
     </div>
     <div className={Styles.detailsConatiner}>
       <div className={Styles.heading}>

@@ -1,0 +1,26 @@
+@use "../Base/" as *;
+
+.skillListContainer {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+
+  .skillCard {
+    @include elevate();
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: $font-14;
+    color: $primary-text-color;
+    text-transform: uppercase;
+    line-height: 28px;
+
+    .icons {
+      font-size: $font-28;
+    }
+  }
+}

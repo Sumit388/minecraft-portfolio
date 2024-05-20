@@ -148,22 +148,22 @@
   border-radius: 10%;
 }
 
-@mixin buttonStyles{
-    background: transparent;
-    color: $off-white;
-    border-radius: 10px;
-    height: 30px;
-    min-width: 200px;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    margin-bottom: 10px;
-    white-space: nowrap;
-    border: 1px solid $off-white;
-    cursor: pointer;
-    font-size: $font-14;
+@mixin buttonStyles {
+  background: transparent;
+  color: $off-white;
+  border-radius: 10px;
+  height: 30px;
+  min-width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  border: 1px solid $off-white;
+  cursor: pointer;
+  font-size: $font-14;
 
-    &:hover {
-      border: 1px solid $yellow-text-color;
-      color: $yellow-text-color;
-    }
+  &:hover {
+    border: 1px solid $yellow-text-color;
+    color: $yellow-text-color;
+  }
 }

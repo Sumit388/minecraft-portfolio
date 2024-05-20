@@ -40,7 +40,7 @@ export const BANNER_DATA = [
     size: [3, 3, 2],
     rotation: [0, 0, 0],
     texture: blankTexture,
-    url: "/about",
+    url: "/skills",
   },
   {
     id: 5,
