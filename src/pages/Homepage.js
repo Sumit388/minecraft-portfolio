@@ -12,6 +12,7 @@ import { Cubes } from "../components/Cubes";
 import { TextureSelector } from "../components/TextureSelector";
 import { Menu } from "../components/Menu";
 import { Banner } from "../components/Banner";
+import Modal from "../components/Common/Modal";
 
 //* Data Imports */
 import { BANNER_DATA } from "../data/Homepage/bannerData";
@@ -22,6 +23,8 @@ import Styles from "../styles/Home/Homepage.module.scss";
 function Homepage() {
   const [sunPosition, setSunPosition] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [openModal, setOpenModal] = useState(false);
+  const [openPopper, setOpenPopper] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -42,8 +45,11 @@ function Homepage() {
   }, [direction]);
 
   return (
-    <div className={Styles.homepageContainer}>
-      <Canvas >
+    <div
+      className={Styles.homepageContainer}
+      onClick={() => setOpenPopper(false)}
+    >
+      <Canvas>
         <Sky sunPosition={[200, sunPosition, 20]} distance={500} />
         <ambientLight intensity={0.5} />
         <FPV />
@@ -60,7 +66,12 @@ function Homepage() {
       </Canvas>
       <div className="absolute centered cursor">+</div>
       <TextureSelector />
-      <Menu />
+      <Menu
+        setOpenModal={setOpenModal}
+        openPopper={openPopper}
+        setOpenPopper={setOpenPopper}
+      />
+      {openModal && <Modal openModal={openModal} setOpenModal={setOpenModal} />}
     </div>
   );
 }

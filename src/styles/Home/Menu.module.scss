@@ -1,0 +1,28 @@
+@use "../Base/" as *;
+
+.menuContainer {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+  .menuButtonStyles {
+    @include elevate();
+    background: rgba($black, 0.6);
+    border: none;
+    color: $off-white;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: $font-16;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .helpContainer {
+    position: relative;
+  }
+}

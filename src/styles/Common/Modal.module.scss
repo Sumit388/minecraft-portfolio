@@ -1,0 +1,37 @@
+@use "../Base/" as *;
+
+.modalConatiner {
+  position: fixed;
+  top: 8dvh;
+  left: 5dvw;
+  height: 90dvh;
+  width: 90dvw;
+  @include elevate();
+  border-radius: 8px;
+  background: rgba($black, 0.9);
+  z-index: 100;
+
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: $off-white;
+    cursor: pointer;
+  }
+
+  .contentConatiner {
+    box-sizing: border-box;
+    padding: 30px;
+    margin-top: 40px;
+    height: calc(100% - 60px);
+    width: 100%;
+    overflow: auto;
+    @include hideScroll();
+
+    li {
+      color: $off-white;
+    }
+  }
+}
